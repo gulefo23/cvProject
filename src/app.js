@@ -1,9 +1,15 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
+const bcrypt = require('bcrypt-nodejs');
+const dotenv = require("dotenv").config();
+const passport = require('passport');
+const flash = require('express-flash');
+const session = require('express-session');
 
 // initializations
 const app = express();
+
 
 // settings
 app.set('port', process.env.PORT || 3000);
@@ -19,8 +25,15 @@ app.set('view engine', '.hbs');
 // middlewares
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+app.use(session({
+    secret: 'iaushd83236y)(&$)9283742%"·"&',
+    resave: false,
+    saveUninitialized: true
+}));
+app.use(flash());
 
 // routes
+this.json
 app.use(require('./routes'));
 
 // public

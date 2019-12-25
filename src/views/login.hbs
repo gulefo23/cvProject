@@ -1,0 +1,33 @@
+<main class="index">
+    <header class="privatearea d-flex" style="opacity: 0.8;"></header>
+        <div class="container" style="position: relative; top: 30%;">
+                <form class="login-form" action="/login" method="POST">
+                    <div class="form-header">
+                        <h3>Login</h3>
+                        <p>This is a Login page to acces the private area of the administrator.</p>
+                    </div>
+                    <!--Username Input-->
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="username" placeholder="Username" required>
+                    </div>
+                    <!--Password Input-->
+                    <div class="form-group">
+                        <input type="password" class="form-input" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="error text-center">
+                        {{messages.error}}
+                    </div>
+                    <!--Login Button-->
+                    <a href="/admin">
+                        <div class="form-group" style="text-align: center;">
+                            <input type="submit" class="btn btn-danger" value="Login">
+                        </div>
+                    </a>
+                </form>
+                <a href="/" class="m-3">
+                    <div class="form-group" style="text-align: center;">
+                        <input type="button" class="btn btn-danger" value="Go Back">
+                    </div>
+                </a>
+        </div><!--/.wrap-->
+</main>

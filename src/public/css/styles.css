@@ -1,3 +1,8 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
 body {
     width: 100%;
     margin: auto;
@@ -10,15 +15,19 @@ body {
     min-width:600px;
     max-width:2000px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
 }
 
 .index {
     position: ;
     width: 100vw;
     height: 100vh;
+    flex: auto;
 }
 
 .masthead {
@@ -32,10 +41,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
+    flex: auto;
 }
 
 .title {
@@ -92,7 +98,6 @@ body {
     padding: 30px;
     margin: auto;
     border: 2px white;
-    float: bottom;
 }
 
 .studies {
@@ -106,7 +111,6 @@ body {
     margin: 0 auto;
     border: 2px solid transparent;
     border-image-slice: 1;
-    float: bottom;
 }
 
 .cv {

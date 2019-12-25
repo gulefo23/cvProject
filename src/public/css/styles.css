@@ -9,6 +9,11 @@ body {
     margin:auto;
     min-width:600px;
     max-width:2000px;
+    display: -webkit-flex;
+      -webkit-flex-direction: row;
+
+      display: flex;
+      flex-direction: row;
 }
 
 .index {
@@ -28,6 +33,11 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: -webkit-flex;
+      -webkit-flex-direction: row;
+
+      display: flex;
+      flex-direction: row;
 }
 
 .title {
